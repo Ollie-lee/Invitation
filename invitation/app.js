@@ -14,6 +14,8 @@ app.set('view engine', 'ejs')
 //tell app we are using body-parser and do not do anything
 //! we can use req.body
 app.use(bodyParser.urlencoded({extended:true}))
+//Everything inside the public directory is now available in our views.
+app.use(express.static(__dirname + "/public"))
 
 app.listen(8080, function (req, res) {
     console.log('connection 8080')

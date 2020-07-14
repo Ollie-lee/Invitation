@@ -1,11 +1,18 @@
-<h1>Invitation</h1>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<link rel="stylesheet" href="/app.css">
 
-<p class="lead">Enter your email to join <strong><%= count %></strong>
-    others on our waitlist. We are 100% not a cult. </p>
+<div class="flex-container">
+    <div class="container">
+        <h1>Invitation</h1>
 
-<form method="POST" action='/register'>
-    <!-- take us to 'xxxx.com/register' -->
-    <input type="text" class="form" name="email" placeholder="Enter Your Email">
-    <!-- <input type="text" class="form"  placeholder="Enter Your Name"> -->
-    <button>Join Now</button>
-</form>
+        <p class="lead">Enter your email to join <strong><%= count %></strong>
+            others on our waitlist. We are 100% not a cult. </p>
+
+        <form method="POST" action='/register'>
+            <!-- take us to 'xxxx.com/register' -->
+            <input type="text" class="form" name="email" placeholder="Enter Your Email" autocomplete=false>
+            <!-- <input type="text" class="form"  placeholder="Enter Your Name"> -->
+            <button>Join Now</button>
+        </form>
+    </div>
+</div>
